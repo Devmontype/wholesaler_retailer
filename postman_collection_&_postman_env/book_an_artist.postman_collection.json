@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "7170fdbd-368a-403f-a7a9-ad71d1542d51",
+		"name": "book_an_artist",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List all wholesalers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{base_url}}wholesalers"
+			},
+			"response": []
+		},
+		{
+			"name": "List all retailers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{base_url}}retailers"
+			},
+			"response": []
+		},
+		{
+			"name": "List all retailers of wholesaler",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{base_url}}wholesaler/2",
+				"description": "Pass the id in url"
+			},
+			"response": []
+		},
+		{
+			"name": "List the retailers who has single wholesaler",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{base_url}}retailer_single_wholesaler"
+			},
+			"response": []
+		},
+		{
+			"name": "Monthly turnover for each wholesaler",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{base_url}}monthly_turnover"
+			},
+			"response": []
+		},
+		{
+			"name": "Max turnover from each wholesalers on single retailer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{base_url}}max_turnover_from_retailers"
+			},
+			"response": []
+		}
+	]
+}
